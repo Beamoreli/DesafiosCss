@@ -1,0 +1,54 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.coracao {
+    transform: rotate(45deg);
+    border-radius: .2em;
+    background-color: #ed5860;
+    animation: batimentos 1s ease-in-out infinite;
+}
+
+.coracao::before,
+.coracao::after {
+    display: block;
+    content: "";
+    border-radius: 50%;
+    background-color: inherit;
+    animation: batimentos 1s ease-in-out infinite;
+}
+
+.coracao::before {
+    margin-top: -50%;
+}
+
+.coracao::after {
+    margin-top: -50%;
+    margin-left: -50%;
+}
+
+@keyframes batimentos {
+    0% {
+        width: 10em;
+        height: 10em;
+    }
+
+    50% {
+        width: 12em;
+        height: 12em;
+    }
+
+    100% {
+        width: 10em;
+        height: 10em;
+    }
+}

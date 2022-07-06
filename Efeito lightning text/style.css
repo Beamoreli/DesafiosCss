@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12vh;
+    
+}
+
+
+.letras span {
+    color: #2800a1;
+    animation: efeito infinite linear;
+    animation-duration: 3s;
+}
+
+.letras span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.letras span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.letras span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.letras span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.letras span:nth-child(5) {
+    animation-delay: 1s;
+}
+.letras span:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.letras span:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.letras span:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.letras span:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.letras span:nth-child(10) {
+    animation-delay: 2s;
+}
+
+
+@keyframes efeito {
+    0% {color: #2800a1; text-shadow: none;}
+    90% {color: #2800a1; text-shadow: none;}
+	100% {color: rgb(255, 238, 0); text-shadow: 1px 1px 5px rgb(255, 238, 0), 0px 0px 50px rgb(243, 242, 241)}
+}
